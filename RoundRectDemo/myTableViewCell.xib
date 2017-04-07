@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="myTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="321" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Iverson.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gie-3Q-8IS">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="QVP-3g-CdM"/>
+                            <constraint firstAttribute="height" constant="40" id="Xbe-8r-2Xf"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Iverson.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Oh1-Y2-mZW">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="BWz-xj-0L8"/>
+                            <constraint firstAttribute="width" constant="40" id="sx2-FR-PFD"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Iverson.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Xe6-wW-IMl">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="hJr-cB-fyP"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Iverson.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QR5-77-YWe">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="CKe-rB-znQ"/>
+                            <constraint firstAttribute="width" constant="40" id="qjH-4e-7FV"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Xe6-wW-IMl" firstAttribute="top" secondItem="gie-3Q-8IS" secondAttribute="top" id="8eu-hk-1W1"/>
+                    <constraint firstItem="Oh1-Y2-mZW" firstAttribute="bottom" secondItem="gie-3Q-8IS" secondAttribute="bottom" id="FLL-En-VZl"/>
+                    <constraint firstItem="Oh1-Y2-mZW" firstAttribute="leading" secondItem="gie-3Q-8IS" secondAttribute="trailing" constant="50" id="JCe-ar-0RQ"/>
+                    <constraint firstAttribute="trailing" secondItem="QR5-77-YWe" secondAttribute="trailing" constant="5" id="TPe-hs-1GI"/>
+                    <constraint firstItem="QR5-77-YWe" firstAttribute="leading" secondItem="Xe6-wW-IMl" secondAttribute="trailing" constant="50" id="Th1-jC-Lx4"/>
+                    <constraint firstItem="Xe6-wW-IMl" firstAttribute="bottom" secondItem="gie-3Q-8IS" secondAttribute="bottom" id="f5n-e8-M22"/>
+                    <constraint firstItem="QR5-77-YWe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="iI2-9t-3PV"/>
+                    <constraint firstItem="Oh1-Y2-mZW" firstAttribute="top" secondItem="gie-3Q-8IS" secondAttribute="top" id="rT8-5r-0df"/>
+                    <constraint firstItem="QR5-77-YWe" firstAttribute="top" secondItem="gie-3Q-8IS" secondAttribute="top" id="tuT-Er-SqR"/>
+                    <constraint firstItem="QR5-77-YWe" firstAttribute="bottom" secondItem="gie-3Q-8IS" secondAttribute="bottom" id="z3q-1H-LX5"/>
+                    <constraint firstItem="gie-3Q-8IS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="zqR-jO-7pj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="image1View" destination="gie-3Q-8IS" id="VdF-6o-RTQ"/>
+                <outlet property="image2View" destination="Oh1-Y2-mZW" id="ke0-KY-yDF"/>
+                <outlet property="image3View" destination="Xe6-wW-IMl" id="1yg-PJ-gQR"/>
+                <outlet property="image4View" destination="QR5-77-YWe" id="GdV-2B-UF6"/>
+            </connections>
+            <point key="canvasLocation" x="29.5" y="19"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Iverson.jpg" width="1920" height="1080"/>
+    </resources>
+</document>
